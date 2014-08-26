@@ -8,10 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.prabhat.model.User;
 
-/**
- * @author Dinesh Rajput
- *
- */
 @Repository("userDao")  
 public class UserDaoImpl implements UserDao {
 
