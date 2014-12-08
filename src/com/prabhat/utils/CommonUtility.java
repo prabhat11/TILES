@@ -3,15 +3,13 @@ package com.prabhat.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.dineshonjava.struts2.bean.UserBean;
-import com.dineshonjava.struts2.model.User;
 
 /**
- * @author Dinesh Rajput
+ * @author prabhat
  *
  */
 public class CommonUtility {
-	public static User createModel(UserBean userBean){
+/*	public static User createModel(UserBean userBean){
 		User user = new User();
 		user.setUserName(userBean.getUserName());
 		user.setUserAge(userBean.getUserAge());
@@ -35,7 +33,7 @@ public class CommonUtility {
 		}
 		return beans;
 		
-	}
+	}*/
 	public static String convertArrayToCsv(String [] arr){
 		String csv = "";
 		for(String value : arr){

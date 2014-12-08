@@ -11,7 +11,7 @@ import com.prabhat.dao.UserDao;
 import com.prabhat.model.User;
 
 /**
- * @author Dinesh Rajput
+ * @author prabhat
  *
  */
 @Service("userService")
@@ -21,13 +21,11 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 	
-	@Override
 	@Transactional(propagation = Propagation.REQUIRED, readOnly = false)  
 	public void saveUser(User user) {
 		userDao.saveUser(user);
 	}
 
-	@Override
 	public List<User> getUserList() {
 		return userDao.getUserList();
 	}

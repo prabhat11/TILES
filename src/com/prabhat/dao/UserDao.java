@@ -5,7 +5,7 @@ import java.util.List;
 import com.prabhat.model.User;
 
 /**
- * @author Dinesh Rajput
+ * @author prabhat
  *
  */
 public interface UserDao {

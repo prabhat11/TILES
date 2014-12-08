@@ -14,13 +14,11 @@ public class UserDaoImpl implements UserDao {
 	@Autowired  
 	private SessionFactory sessionFactory;  
 	
-	@Override
 	public void saveUser(User user) {
 		sessionFactory.getCurrentSession().saveOrUpdate(user);
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public List<User> getUserList() {
 		return (List<User>) sessionFactory.getCurrentSession().createCriteria(User.class).list();
 	}
